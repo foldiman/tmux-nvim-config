@@ -25,3 +25,14 @@ alias vim=nvim
 echo 'alias vim=nvim' >> .zshrc
 nvim source ~/.config/tmux/tmux.conf
 (Type <<leader> + I>) to install tmux plugins
+
+If using WSL, its recommended to install Hyper for the shell. To do so:
+git clone --filter=blob:none --sparse git@github.com:ryanoasis/nerd-fonts
+cd nerd-fonts
+install FiraCode
+(Install Hyper) and modify the following preferences:
+  fontSize: 18,
+  fontFamily: '"JetBrainsMono NFM", Consolas, Menlo, "DejaVu Sans Mono", "Lucida Console", monospace',
+  backgroundColor: '#052633',
+  shell: 'C:\\Windows\\System32\\wsl.exe',
+  shellArgs: ['-d', 'Ubuntu-24.04'], (Obviously replace Ubuntu-24.04 with your distribution)
