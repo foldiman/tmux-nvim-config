@@ -1,4 +1,4 @@
-Instructions: 
+Instructions:
 
 _Update package registry_
 sudo apt update
@@ -17,14 +17,7 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 _Install rust_
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
-_Install Neovim_ (Ubuntu <24)
-wget https://github.com/neovim/neovim/releases/download/v0.9.5/nvim-linux64.tar.gz
-tar xzvf nvim-linux64.tar.gz
-sudo cp -r nvim-linux64/bin/nvim /usr/bin/nvim
-sudo rm -r nvim-linux64
-sudo rm -r nvim-linux64.tar.gz
-
-_Install Neovim_ (Ubuntu 24)
+_Install Neovim_
 sudo apt install neovim
 
 _Install JetBrains NerdFont_
